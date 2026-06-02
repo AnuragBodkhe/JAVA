@@ -7,12 +7,9 @@ public class PascalsTrianglePattern {
 
         for (int row = 1; row <= line; row++) {
 
-            // Print spaces
             for (int space = 1; space <= line - row; space++) {
                 System.out.print(" ");
             }
-
-            // Print stars with spaces
             for (int star = 1; star <= row; star++) {
                 System.out.print("* ");
             }
