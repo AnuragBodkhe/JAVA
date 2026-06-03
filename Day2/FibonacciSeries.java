@@ -1,28 +1,17 @@
 package Day2;
 
-import java.util.Scanner;
-
 public class FibonacciSeries {
     public static void main(String[] args) {
+        int length = 7;
 
-        Scanner obj = new Scanner(System.in);
-
-        System.out.print("Enter number of terms: ");
-        int n = obj.nextInt();
-
-        int first = 0;
-        int second = 1;
-        int count = 0;
-
-        while (count < n) {
-
-            System.out.print(first + " ");
-
-            int next = first + second;
-            first = second;
-            second = next;
-
-            count++;
+        int a = 0;
+        int b = 1;
+        System.out.print(a + " " + b);
+        for (int i = 1; i <= length; i++) {
+            int c = a + b;
+            System.out.print(" " + c + " ");
+            a = b;
+            b = c;
         }
     }
 }

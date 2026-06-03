@@ -1,29 +1,26 @@
 package Day2;
 
-import java.util.Scanner;
-
 public class ArmstrongNumber {
     public static void main(String[] args) {
+        int num = 153;
+        int temp = num;
+        int count = 0;
 
-        Scanner obj = new Scanner(System.in);
-
-        System.out.print("Enter number: ");
-        int input = obj.nextInt();
-
-        int original = input;
-        int sum = 0;
-
-        while (input != 0) {
-
-            int digit = input % 10;
-            sum = sum + (digit * digit * digit);
-            input = input / 10;
+        while (temp != 0) {
+            count++;
+            temp = temp / 10;
+        }
+        temp = num;
+        double sum = 0;
+        while (temp != 0) {
+            int digit = temp % 10;
+            sum = sum + Math.pow(digit, count);
+            temp = temp / 10;
         }
 
-        if (sum == original) {
-            System.out.println(original + " is Armstrong Number");
-        } else {
-            System.out.println(original + " is Not Armstrong Number");
+        if (sum == num) {
+            System.out.println("Its a armstrong");
         }
+
     }
 }
