@@ -2,7 +2,7 @@ package Day1.Conditional_Statements;
 
 import java.util.Scanner;
 
-public class BankFD {
+public class Bank {
     public static void main(String[] args) {
         System.err.println("1.Withdrawl 2.Deposit 3.CurrentBalance 4. FD");
         int balance = 2000;
