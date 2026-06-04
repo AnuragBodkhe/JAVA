@@ -1,4 +1,4 @@
-package Day1.Conditional_Statements;
+package Day3;
 
 import java.util.Scanner;
 
