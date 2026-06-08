@@ -1,10 +1,11 @@
 package Day6;
 
 public class MergeSort {
+
     // Merges two subarrays of arr[].
     // First subarray is arr[l..m]
     // Second subarray is arr[m+1..r]
-    static void merge(int arr[], int l, int m, int r){
+    static void merge(int arr[], int l, int m, int r) {
 
         // Find sizes of two subarrays to be merged
         int n1 = m - l + 1;
@@ -31,8 +32,7 @@ public class MergeSort {
             if (L[i] <= R[j]) {
                 arr[k] = L[i];
                 i++;
-            }
-            else {
+            } else {
                 arr[k] = R[j];
                 j++;
             }
@@ -56,33 +56,31 @@ public class MergeSort {
 
     // Main function that sorts arr[l..r] using
     // merge()
-    static void mergeSort(int arr[], int l, int r){
+    static void mergeSort(int arr[], int left, int right) {
 
-        if (l < r) {
+        if (left < right) {
 
             // Find the middle point
-            int m = l + (r - l) / 2;
+            int m = left + (right - left) / 2;
 
             // Sort first and second halves
-            mergeSort(arr, l, m);
-            mergeSort(arr, m + 1, r);
+            mergeSort(arr, left, m);
+            mergeSort(arr, m + 1, right);
 
             // Merge the sorted halves
-            merge(arr, l, m, r);
+            merge(arr, left, m, right);
         }
     }
 
-    // Driver code
-    public static void main(String args[]){
+    public static void main(String[] args) {
 
-        int arr[] = {38, 27, 43, 10};
+        int arr[] = { 8, 3, 5, 4, 7, 6, 1, 2 };
 
         mergeSort(arr, 0, arr.length - 1);
 
-        int n = arr.length;
-        for (int i = 0; i < n; ++i)
-            System.out.print(arr[i] + " ");
-        System.out.println();
+        for (int i : arr) {
+            System.out.print(" " + i + " ");
+        }
+
     }
 }
-
