@@ -6,7 +6,7 @@ public class HDFC {
     double balance;
 
     HDFC() {// it get called , when we create a new object
-        name = "User";
+        name = "User"; // Initialize the variables
         AccNo = 11111;
         balance = 00.00;
     }
