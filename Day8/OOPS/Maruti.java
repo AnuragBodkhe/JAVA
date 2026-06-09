@@ -2,20 +2,32 @@ package Day8.OOPS;
 
 public class Maruti {
 
-    int Model;
+    static int Cartyres = 4;
+    int Model;// class attribute -> instance variable
     double TopSpeed;
-    String Color;
+    String color;
 
-    void StartEngine(){
-        System.out.println("Engine Started, Brummm brummm");
+    void StartEngine() {
+        int petrol = 3;// local variable
+        System.out.println(3 + " litree free oil to you!!");
+        System.out.println("Bruummm bRummmmm");
+    }
+
+    void StopEngine() {
+        System.out.println("Chikkkchiikcchiikkk");
+    }
+
+    void drift() {
+        System.out.println("sheeeeeeeeeeeeeeeee");
 
     }
 
-    void StopEngine(){
-        System.out.println("Engine Stopped, chickkc chicckk");
+    static void serverWater() {
+        System.out.println("Lee munna paani peee");
     }
 
-    void color(){
-        System.out.println("Color is " + Color);
+    void carVarient(String varient) {
+        System.out.println(varient.toUpperCase() + " is available");
     }
+
 }
