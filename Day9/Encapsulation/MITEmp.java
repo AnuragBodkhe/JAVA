@@ -1,7 +1,7 @@
-package Day8.OOPS.Encapsulation;
+package Day9.Encapsulation;
 
 public class MITEmp {
-    public String name;
+    public String name;  // class attributes
     public int id;
     public double salary;
 

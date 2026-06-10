@@ -1,4 +1,4 @@
-package Day8.OOPS.Encapsulation;
+package Day9.Encapsulation;
 
 public class App {
     public static void main(String[] args){
@@ -10,6 +10,6 @@ public class App {
 
         director.setSalary(700000);
         director.showSalary();
-        
+
     }
 }
