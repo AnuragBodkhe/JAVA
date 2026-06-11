@@ -39,7 +39,7 @@ public class FoodOrder {
             System.out.println(items[i] + " -> " + Quantity[i]);
         }
 
-        System.out.println("Grand Total of you cart is" + grandTotal);
+        System.out.println("Grand Total of you cart is " + " -> " + grandTotal);
 
     }
 }
