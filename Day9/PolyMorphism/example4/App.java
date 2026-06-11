@@ -1,59 +1,48 @@
 package Day9.PolyMorphism.example4;
 
 public class App {
-
     public static void main(String[] args) {
 
-        String vehicles[] = {
-                "car", "bike", "truck",
-                "truck", "car", "bike"
+        Parking vehicles[] = {
+                new Car(),
+                new Bike(),
+                new Truck(),
+                new Car(),
+                new Bike(),
+                new Car()
         };
 
-        int carCount = 0;
-        int bikeCount = 0;
-        int truckCount = 0;
-
-        int carToll = 0;
-        int bikeToll = 0;
-        int truckToll = 0;
+        int bike = 0;
+        int truck = 0;
+        int car = 0;
+        int countOfBike = 0;
+        int countOfCar = 0;
+        int countOfTruck = 0;
 
         int totalToll = 0;
 
-        for (String vehicle : vehicles) {
-
-            Parking p = null;
-
-            if (vehicle.equalsIgnoreCase("car")) {
-                p = new CarParking();
-                carCount++;
-                carToll += p.toll();
-            }
-            else if (vehicle.equalsIgnoreCase("bike")) {
-                p = new BikeParking();
-                bikeCount++;
-                bikeToll += p.toll();
-            }
-            else if (vehicle.equalsIgnoreCase("truck")) {
-                p = new TruckParking();
-                truckCount++;
-                truckToll += p.toll();
+        for (Parking v : vehicles) {
+            if (v instanceof Car) {
+                Car temp = new Car();
+                car = car + temp.toll();
+                countOfCar++;
+            } else if (v instanceof Bike) {
+                Bike temp2 = new Bike();
+                bike = bike + temp2.toll();
+                countOfBike++;
+            } else if (v instanceof Truck) {
+                Truck temp3 = new Truck();
+                truck = truck + temp3.toll();
+                countOfTruck++;
             }
 
-            totalToll += p.toll();
         }
 
-        System.out.println("Cars   : " + carCount);
-        System.out.println("Bikes  : " + bikeCount);
-        System.out.println("Trucks : " + truckCount);
+        System.out.println("Ajj ka total toll " + (bike + car + truck));
 
-        System.out.println();
+        System.out.println("Total Cars " + countOfCar + " and total was " + car);
+        System.out.println("Total Bike " + countOfBike + " and total was " + bike);
+        System.out.println("Total Trucks " + countOfTruck + " and total was " + truck);
 
-        System.out.println("Car Toll   : " + carToll);
-        System.out.println("Bike Toll  : " + bikeToll);
-        System.out.println("Truck Toll : " + truckToll);
-
-        System.out.println();
-
-        System.out.println("Total Toll : " + totalToll);
     }
 }
