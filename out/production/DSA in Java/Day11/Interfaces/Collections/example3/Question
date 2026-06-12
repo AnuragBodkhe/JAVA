@@ -1,0 +1,16 @@
+
+
+
+
+class Review{
+      id
+      Product Milk
+      String Comments
+}
+
+Service layer
+
+TosearchAReviewByProduct
+ToUpdateACommentByItsId
+ToSortReviewListById
+
