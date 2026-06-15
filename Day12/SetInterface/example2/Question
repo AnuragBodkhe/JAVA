@@ -1,0 +1,18 @@
+
+Motive : is to automatically eliminate duplicates registration
+
+1. Register a student email       --------> (Case sensitive)
+2. Register multiple student emails  --------> (Hold)
+3. remove a student email
+4. Search whether a student email is registered
+5. Display all registered student emails
+6. check wheter registration list is empty
+7. clear all
+
+Edge cases:
+
+1. Duplicate emails
+2. Empty emails emails ------> (@gmail.com, likha ho && input > 12)
+3. removing an email that is not registered
+4. Searching in ann empty collection
+5. different case emails --------> (ABC@  abc@)
