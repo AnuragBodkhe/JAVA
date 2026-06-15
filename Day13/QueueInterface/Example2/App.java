@@ -7,25 +7,24 @@ public class App {
     public static void main(String[] args) {
         Queue<String> TicketsLine = new LinkedList<>();
 
-        TicketsLine.offer("Anurag");
-        TicketsLine.offer("Raju");
-        TicketsLine.offer("Rupa");
-        TicketsLine.offer("Chinki");
+        // TicketsLine.offer("Pankaj");
+        // TicketsLine.offer("Raju");
+        // TicketsLine.offer("Rupa");
+        // TicketsLine.offer("Chinki");
 
-        System.out.println(TicketsLine);
+        // System.out.println(TicketsLine);
 
-        System.out.println(TicketsLine.peek());
+        // System.out.println(TicketsLine.peek());
 
-        System.out.println(TicketsLine.poll());
+        // System.out.println(TicketsLine.poll());
 
-        System.out.println(TicketsLine);
+        // System.out.println(TicketsLine);
 
-        System.out.println(TicketsLine.size());
+        // System.out.println(TicketsLine.size());
 
-        TicketsLine.clear();
+        // TicketsLine.clear();
 
-        System.out.println(TicketsLine.isEmpty());
+        // System.out.println(TicketsLine.isEmpty());
 
     }
 }
-

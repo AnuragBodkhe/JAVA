@@ -1,6 +1,6 @@
 package Day13.QueueInterface.Example2;
 
-public class Patient {
+public class Patient implements Comparable<Patient> {
     private int Id;
     private String Name;
     private int age;
@@ -48,6 +48,11 @@ public class Patient {
 
     public void setDisease(String disease) {
         this.disease = disease;
+    }
+
+    @Override
+    public int compareTo(Patient o) {
+        return this.getId() - o.getId();
     }
 
 }
