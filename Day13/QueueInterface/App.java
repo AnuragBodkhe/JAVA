@@ -8,6 +8,23 @@ public class App {
 
         Queue<String> TicketsLine = new LinkedList<>();
 
-        TicketsLine.
+        TicketsLine.offer("Anurag");
+        TicketsLine.offer("Dhani");
+        TicketsLine.offer("Dhanashri");
+        TicketsLine.offer("Mann");
+
+        System.out.println(TicketsLine);
+
+        System.out.println(TicketsLine.peek());
+
+        System.out.println(TicketsLine.poll());
+
+        System.out.println(TicketsLine);
+
+        System.out.println(TicketsLine.size());
+
+        TicketsLine.clear();
+
+        System.out.println(TicketsLine.isEmpty());
     }
 }
