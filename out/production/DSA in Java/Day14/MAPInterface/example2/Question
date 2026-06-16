@@ -1,0 +1,35 @@
+Swiggy Website
+
+Customers ke orders manage 
+
+#single customer ke multiple orders
+
+Store:
+Customer details in a hashmap
+Order details in an arraylist
+
+
+Classes
+Customer:
+Id
+Name
+Email
+
+
+Order:
+Id
+customerId;
+productname
+amount;
+
+
+operations:
+
+Add Customer    
+Add order -> if customer exists
+Display all customers
+display all orders -> with respect to customer
+Display order for a specific customer
+Calculate total spending of a customer
+Find customer with highest spending
+Remove Customer with their orders as well
